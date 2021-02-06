@@ -31,36 +31,30 @@ let myContact =
 {
     function displayHome()
     {
-      let imageSize = "1500px 7000px";
-      let imageUrl2 = `url('./grayImage.png')`;
-      //document.body.style.backgroundImage = "url('./download.jpg')";
-      let bodyImage = document.body.style;
-      bodyImage.backgroundSize = imageSize;
-      bodyImage.backgroundImage = imageUrl2;
-        //let paragraphOneText =
-         // "This is a simple site to demonstrate DOM Manipulation for ICE 1";
+        let paragraphOneText =
+          "This is a simple site to demonstrate DOM Manipulation for ICE 1";
 
-        //let paragraphOneElement = document.getElementById("paragraphOne");
+        let paragraphOneElement = document.getElementById("paragraphOne");
 
-        //paragraphOneElement.textContent = paragraphOneText;
-        //paragraphOneElement.className = "fs-5";
+        paragraphOneElement.textContent = paragraphOneText;
+        paragraphOneElement.className = "fs-5";
 
         // Step 1. document.createElement
         let newParagraph = document.createElement("p");
         // Step 2. configure the element
-        //newParagraph.setAttribute("id", "paragraphTwo");
-        //newParagraph.textContent = "...And this is paragraph two";
+        newParagraph.setAttribute("id", "paragraphTwo");
+        newParagraph.textContent = "...And this is paragraph two";
         // Step 3. select the parent element
         let mainContent = document.getElementsByTagName("main")[0];
         // Step 4. Add / Insert the element
-         mainContent.appendChild(newParagraph);
+        mainContent.appendChild(newParagraph);
 
-        //newParagraph.className = "fs-6";
+        newParagraph.className = "fs-6";
 
         // another way of injecting content
-        //let paragraphDiv = document.createElement("div");
-        //let paragraphThree = `<p id="paragraphThree" class="fs-7 fw-bold">And this is the Third Paragraph</p>`;
-        //paragraphDiv.innerHTML = paragraphThree;
+        let paragraphDiv = document.createElement("div");
+        let paragraphThree = `<p id="paragraphThree" class="fs-7 fw-bold">And this is the Third Paragraph</p>`;
+        paragraphDiv.innerHTML = paragraphThree;
 
         // insertions
 
@@ -68,25 +62,7 @@ let myContact =
         //newParagraph.before(paragraphDiv);
 
         // example of inserting after a node
-        //newParagraph.after(paragraphDiv);
-
-
-        // add image 
-        //let image = document.createElement("div");
-        //let imageUrl = `<img src="./download.jpg" alt="Girl in a jacket" width="500" height="600">`;
-        //image.innerHTML = imageUrl
-        //newParagraph.before(image);
-
-        // paragraph details 
-        let paragraphMain = document.createElement("div");
-        let paragraphIndex = `<p id="mainParagraph" class="fs-7 fw-bold">I am a student at Durham College in Computer Programming Analyst program.
-        I have a background of software developer in a company with senior developers. 
-        I have gained various experiences and I have my own ideas and views. I will try my best to work independently 
-        or to have my own company. I like the atmosphere of startups and entrepreneurship and I try not to be unaware of it</p>`;
-        paragraphMain.innerHTML = paragraphIndex;
-
-        newParagraph.before(paragraphMain);
-
+        newParagraph.after(paragraphDiv);
 
         // deletions
 
@@ -94,12 +70,15 @@ let myContact =
         //paragraphOneElement.remove();
 
         // example of removeChild
-        //mainContent.removeChild(paragraphOneElement);
+        mainContent.removeChild(paragraphOneElement);
 
         // update / modification
         //mainContent.firstElementChild.textContent = "Welcome Home!";
 
-        //mainContent.innerHTML = `<h1 id="firstHeading">Welcome to WEBD6201 - Lab 2</h1>`;
+        mainContent.innerHTML = `<h1 id="firstHeading">Welcome to WEBD6201 - Lab 2</h1>
+         
+        
+        `;
         
         
     }
@@ -111,17 +90,7 @@ let myContact =
 
     function displayProjects()
     {
-      let newParagraph = document.createElement("p");
 
-      // Step 3. select the parent element
-      let mainContent = document.getElementsByTagName("main")[0];
-      // Step 4. Add / Insert the element
-       mainContent.appendChild(newParagraph);
-      // add image 
-       let image = document.createElement("div");
-       let imageUrl = `<img src="./download.jpg" alt="Girl in a jacket" width="500" height="600">`;
-       image.innerHTML = imageUrl
-       newParagraph.before(image);
     }
 
     function displayServices()

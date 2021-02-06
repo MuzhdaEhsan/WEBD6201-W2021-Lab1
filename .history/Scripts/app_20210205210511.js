@@ -111,17 +111,12 @@ let myContact =
 
     function displayProjects()
     {
-      let newParagraph = document.createElement("p");
-
-      // Step 3. select the parent element
-      let mainContent = document.getElementsByTagName("main")[0];
-      // Step 4. Add / Insert the element
-       mainContent.appendChild(newParagraph);
-      // add image 
-       let image = document.createElement("div");
-       let imageUrl = `<img src="./download.jpg" alt="Girl in a jacket" width="500" height="600">`;
-       image.innerHTML = imageUrl
-       newParagraph.before(image);
+      let imageSize = "1500px 7000px";
+      let imageUrl2 = `url('./grayImage.png')`;
+      //document.body.style.backgroundImage = "url('./download.jpg')";
+      let bodyImage = document.body.style;
+      bodyImage.backgroundSize = imageSize;
+      bodyImage.backgroundImage = imageUrl2;
     }
 
     function displayServices()

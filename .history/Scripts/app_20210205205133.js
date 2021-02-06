@@ -31,8 +31,8 @@ let myContact =
 {
     function displayHome()
     {
-      let imageSize = "1500px 7000px";
-      let imageUrl2 = `url('./grayImage.png')`;
+      let imageSize = "1000px 3000px";
+      let imageUrl2 = `url('./grayImage.jpg')`;
       //document.body.style.backgroundImage = "url('./download.jpg')";
       let bodyImage = document.body.style;
       bodyImage.backgroundSize = imageSize;
@@ -79,10 +79,7 @@ let myContact =
 
         // paragraph details 
         let paragraphMain = document.createElement("div");
-        let paragraphIndex = `<p id="mainParagraph" class="fs-7 fw-bold">I am a student at Durham College in Computer Programming Analyst program.
-        I have a background of software developer in a company with senior developers. 
-        I have gained various experiences and I have my own ideas and views. I will try my best to work independently 
-        or to have my own company. I like the atmosphere of startups and entrepreneurship and I try not to be unaware of it</p>`;
+        let paragraphIndex = `<p id="mainParagraph" class="fs-7 fw-bold">this is some other details.</p>`;
         paragraphMain.innerHTML = paragraphIndex;
 
         newParagraph.before(paragraphMain);
@@ -111,17 +108,7 @@ let myContact =
 
     function displayProjects()
     {
-      let newParagraph = document.createElement("p");
 
-      // Step 3. select the parent element
-      let mainContent = document.getElementsByTagName("main")[0];
-      // Step 4. Add / Insert the element
-       mainContent.appendChild(newParagraph);
-      // add image 
-       let image = document.createElement("div");
-       let imageUrl = `<img src="./download.jpg" alt="Girl in a jacket" width="500" height="600">`;
-       image.innerHTML = imageUrl
-       newParagraph.before(image);
     }
 
     function displayServices()

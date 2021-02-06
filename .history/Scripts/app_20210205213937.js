@@ -72,10 +72,10 @@ let myContact =
 
 
         // add image 
-        //let image = document.createElement("div");
-        //let imageUrl = `<img src="./download.jpg" alt="Girl in a jacket" width="500" height="600">`;
-        //image.innerHTML = imageUrl
-        //newParagraph.before(image);
+        let image = document.createElement("div");
+        let imageUrl = `<img src="./download.jpg" alt="Girl in a jacket" width="500" height="600">`;
+        image.innerHTML = imageUrl
+        newParagraph.before(image);
 
         // paragraph details 
         let paragraphMain = document.createElement("div");
