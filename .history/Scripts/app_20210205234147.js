@@ -181,16 +181,15 @@ let myContact =
             }
         });
 
-        let saveButton = document.getElementById("saveButton");
-        saveButton.addEventListener("click", function(event){
+        let sendButton = document.getElementById("sendButton");
+        sendButton.addEventListener("click", function(event){
            // event.preventDefault();
 
-            let contact = new Contact(fullName.value, contactNumber.value, emailAddress.value, shortMessage.value);
+            let contact = new Contact(fullName.value, contactNumber.value, emailAddress.value);
             
             if(contact.serialize())
             {
-              //localStorage.setItem((localStorage.length + 1).toString(), contact.serialize());
-              window.location.replace("./index.html");
+              localStorage.setItem((localStorage.length + 1).toString(), contact.serialize());
             
             }
             

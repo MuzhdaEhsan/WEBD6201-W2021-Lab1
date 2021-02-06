@@ -29,10 +29,6 @@ let myContact =
 
 (function()
 {
-
-    
-     
-    
     function displayHome()
     {
       let imageSize = "1500px 7000px";
@@ -43,7 +39,7 @@ let myContact =
       bodyImage.backgroundImage = imageUrl2;
 
 
-      
+      let navProject = document.Header.navProject;
         //let paragraphOneText =
          // "This is a simple site to demonstrate DOM Manipulation for ICE 1";
 
@@ -61,11 +57,6 @@ let myContact =
         let mainContent = document.getElementsByTagName("main")[0];
         // Step 4. Add / Insert the element
          mainContent.appendChild(newParagraph);
-
-         let navItem = document.createElement("li");
-         navItem.className = "nav-item";
-         navItem.textContent = `<a class="nav-link" aria-current="page" href="HumanResource.html"><i class="fas fa-tags"></i> Human Resource</a>`;
-         
 
         //newParagraph.className = "fs-6";
 
@@ -96,7 +87,7 @@ let myContact =
         I have gained various experiences and I have my own ideas and views. I will try my best to work independently 
         or to have my own company. I like the atmosphere of startups and entrepreneurship and I try not to be unaware of it</p>`;
         paragraphMain.innerHTML = paragraphIndex;
-        
+
         newParagraph.before(paragraphMain);
 
 
@@ -181,16 +172,15 @@ let myContact =
             }
         });
 
-        let saveButton = document.getElementById("saveButton");
-        saveButton.addEventListener("click", function(event){
+        let sendButton = document.getElementById("sendButton");
+        sendButton.addEventListener("click", function(event){
            // event.preventDefault();
 
-            let contact = new Contact(fullName.value, contactNumber.value, emailAddress.value, shortMessage.value);
+            let contact = new Contact(fullName.value, contactNumber.value, emailAddress.value);
             
             if(contact.serialize())
             {
-              //localStorage.setItem((localStorage.length + 1).toString(), contact.serialize());
-              window.location.replace("./index.html");
+              localStorage.setItem((localStorage.length + 1).toString(), contact.serialize());
             
             }
             

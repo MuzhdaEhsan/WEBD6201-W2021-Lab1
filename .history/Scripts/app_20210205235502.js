@@ -190,7 +190,7 @@ let myContact =
             if(contact.serialize())
             {
               //localStorage.setItem((localStorage.length + 1).toString(), contact.serialize());
-              window.location.replace("./index.html");
+              window.location.href = "./index.html";
             
             }
             
