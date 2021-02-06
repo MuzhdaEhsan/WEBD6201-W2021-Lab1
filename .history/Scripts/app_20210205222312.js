@@ -119,26 +119,18 @@ let myContact =
        mainContent.appendChild(newParagraph);
       // add image 
        let image = document.createElement("div");
-       let imageUrl = `<img src="./thirdpic.PNG" alt="" width="300" height="300">`;
+       let imageUrl = `<img src="./thirdpic.PNG" alt="Girl in a jacket" width="300" height="300">`;
        image.innerHTML = imageUrl
        newParagraph.before(image);
 
        let paragraphMain = document.createElement("div");
-       let paragraphIndex = `<p id="mainParagraph" class="fs-7 fw-bold">Tesla, Inc., is an American electric vehicle and clean energy company 
-        based in Palo Alto, California. This website was designed to show provide some information about Tesla.</p>`;
+        let paragraphIndex = `<p id="mainParagraph" class="fs-7 fw-bold">I am a student at Durham College in Computer Programming Analyst program.
+        I have a background of software developer in a company with senior developers. 
+        I have gained various experiences and I have my own ideas and views. I will try my best to work independently 
+        or to have my own company. I like the atmosphere of startups and entrepreneurship and I try not to be unaware of it</p>`;
         paragraphMain.innerHTML = paragraphIndex;
 
         newParagraph.before(paragraphMain);
-
-        // add image 
-       let image2 = document.createElement("div");
-       let imageUrl2 = `<img src="./Untitled.png" alt="" width="300" height="300">`;
-       
-       image.innerHTML = imageUrl2
-       newParagraph.after(image2);
-
-
-
     }
 
     function displayServices()

@@ -119,26 +119,9 @@ let myContact =
        mainContent.appendChild(newParagraph);
       // add image 
        let image = document.createElement("div");
-       let imageUrl = `<img src="./thirdpic.PNG" alt="" width="300" height="300">`;
+       let imageUrl = `<img src="./thirdpic.PNG" alt="Girl in a jacket" width="500" height="600">`;
        image.innerHTML = imageUrl
        newParagraph.before(image);
-
-       let paragraphMain = document.createElement("div");
-       let paragraphIndex = `<p id="mainParagraph" class="fs-7 fw-bold">Tesla, Inc., is an American electric vehicle and clean energy company 
-        based in Palo Alto, California. This website was designed to show provide some information about Tesla.</p>`;
-        paragraphMain.innerHTML = paragraphIndex;
-
-        newParagraph.before(paragraphMain);
-
-        // add image 
-       let image2 = document.createElement("div");
-       let imageUrl2 = `<img src="./Untitled.png" alt="" width="300" height="300">`;
-       
-       image.innerHTML = imageUrl2
-       newParagraph.after(image2);
-
-
-
     }
 
     function displayServices()

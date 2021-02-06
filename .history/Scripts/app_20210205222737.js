@@ -124,7 +124,7 @@ let myContact =
        newParagraph.before(image);
 
        let paragraphMain = document.createElement("div");
-       let paragraphIndex = `<p id="mainParagraph" class="fs-7 fw-bold">Tesla, Inc., is an American electric vehicle and clean energy company 
+        let paragraphIndex = `<p id="mainParagraph" class="fs-7 fw-bold">Tesla, Inc., is an American electric vehicle and clean energy company 
         based in Palo Alto, California. This website was designed to show provide some information about Tesla.</p>`;
         paragraphMain.innerHTML = paragraphIndex;
 
@@ -133,7 +133,6 @@ let myContact =
         // add image 
        let image2 = document.createElement("div");
        let imageUrl2 = `<img src="./Untitled.png" alt="" width="300" height="300">`;
-       
        image.innerHTML = imageUrl2
        newParagraph.after(image2);
 
