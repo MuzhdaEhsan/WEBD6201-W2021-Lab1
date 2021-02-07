@@ -10,6 +10,8 @@
     
     function displayHome()
     {
+      
+
       var menu= document.getElementById("myNav");
 
       //console.log(menu.previousSibling);
