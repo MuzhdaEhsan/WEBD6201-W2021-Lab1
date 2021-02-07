@@ -72,7 +72,7 @@
 		  MuzhdaContainer.classList.add("justify-content-center");
       MuzhdaContainer.innerHTML = '<h3>Muzhda Ehsan</h3>';
         
-      MuzhdaText.innerText = "This is Muzhda Ehsan, a 2nd year student at Durham College in Computer Programming Analyst program. I chose this field since it is very interesting and I like to code. One of my biggest wishes is to have my own software company. I am a hard working person and I have developed my interpersonal skills through these courses.";
+      MuzhdaText.innerText = "...........................";
 		
 		  // Append Muzhda's about text into text container
       MuzhdaContainerText.appendChild(MuzhdaText);
@@ -117,7 +117,7 @@
 	   
 	    // Add Chibueze's Image
       let ChibuezeImage = document.createElement("div");
-      ChibuezeImage.innerHTML = '<img src="../Assets/ChibuezeImage.jpg" class="col-lg-6"/>'
+      ChibuezeImage.innerHTML = '<img src="../Assets/ChibuezeImage.jpeg" class="col-lg-6"/>'
       ChibuezeImage.classList.add("col-lg-4", "self-img");
       ChibuezeContainer.classList.add("row");
 	   
