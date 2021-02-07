@@ -1,0 +1,45 @@
+/*
+    Author: Muzhda Ehsan & Chibueze Momah
+    Date: 26-01-2021
+    File: app.css
+*/
+
+ 
+
+
+h1{
+    color:black;
+    text-decoration: underline;
+    text-align: center;
+}
+
+ 
+
+h2{
+    color:Black;
+    text-align: left;
+    text-shadow: 2px 2px #f7f2f2;
+}
+
+h4{
+    color:white;
+    text-align: left;
+    text-shadow: 2px 2px #f7f2f2;
+}
+ 
+
+p{
+    color:Black;
+    font-size: large;
+    font-weight: bold;
+}
+
+ 
+
+img.self-img{
+  max-width: 400px;
+}
+
+.center {
+    text-align: center;
+  }
